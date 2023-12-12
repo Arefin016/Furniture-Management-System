@@ -134,6 +134,7 @@ header{
     height: 100%;
     object-fit: cover;
     object-position: center;
+    border-radius: 40px;
 }
 
 .box .box-img img:hover{
