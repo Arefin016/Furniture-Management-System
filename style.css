@@ -97,9 +97,24 @@ header{
 .new-container {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px, auto));
-    gap: 1rem;
+    gap: 6rem;
     margin-top: 2rem;
 }
+
+#carouselExampleIndicators {
+    height: 100vh; /* Set carousel height to 100% of the viewport height */
+  }
+  
+  .carousel-inner {
+    height: 100%; /* Set carousel-inner height to 100% of the parent container (carousel) */
+  }
+  
+  .carousel-item img {
+    width: 220vh;
+    max-height:100vh; /* Set image height to 100% of the parent container (carousel-item) */
+    /* Remove object-fit property to keep the original image size */
+  }
+
 
 .box{
     position: relative;
@@ -158,6 +173,9 @@ header{
 }
 .new-container .box{
     border-radius: 4px;
+    height: 600px;
+    width: 700px;
+    
 }
 .new-container .box .box-img{
     border-radius: 4px;
